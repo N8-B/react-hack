@@ -1,9 +1,12 @@
+var React = require('react');
+var ThumbnailList = require('./thumbnail-list');
+
 var options = {
   thumbnailData: [{
     header: 'Learn React',
     description: 'React is a JavaScript library for building user interfaces. React is a JavaScript library for building user interfaces.',
     title: 'Show Course',
-    number: 12,
+    number: 120,
     imageUrl: "https://facebook.github.io/react/img/logo_og.png"
   },{
     header: 'Learn Gulp',
@@ -17,4 +20,4 @@ var options = {
 
 var element = React.createElement(ThumbnailList, options);
 
-React.render(element, document.querySelector('.container'))
+React.render(element, document.querySelector('.container'));
